@@ -1,19 +1,27 @@
 body {
-    /* background-image: URL(bg.png);
+    background-image: URL("MIN-GK2-KNA_A_FBL.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    margin: 0;*/
+    margin: 0;
+    background-size: 97% 97%;
+    background-color: rgb(13, 119, 146);
 }
 
-#background {
-    margin-left: 38%;
-    margin-right: 39%;
-    margin-top: 16%;
-    height: auto;
-    width: auto;
-}
+
+.wind {
+    
+    margin-bottom: -150px;
+   opacity: 0.5;
+    position: relative;
+    animation: windy 30s infinite;
+    animation-delay: 2s;
+  }
+  @keyframes windy {
+    from {left: 0px;}
+    to {left: 1500px;}
+  }
 
 #bg {
     width: 950px;
