@@ -1,0 +1,23 @@
+body {
+    /* background-image: URL(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;*/
+}
+
+#background {
+    margin-left: 38%;
+    margin-right: 39%;
+    margin-top: 16%;
+    height: auto;
+    width: auto;
+}
+
+#bg {
+    width: 950px;
+    height: 750px;
+
+}
+
