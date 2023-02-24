@@ -29,3 +29,66 @@ body {
 
 }
 
+#mexico { /* do margins, width, and height in percentages so that they can resize with the screen resolution */
+  border: 2px solid black;
+  width: 9.5%;
+  height: 75px;
+  margin-top: 20%;
+  margin-left: 17%; 
+  position: fixed;
+}
+
+#peru {
+  border: 2px solid black;
+  width: 8.5%;
+  height: 70px;
+  margin-top: 26.5%;
+  margin-left: 24.5%;
+  position: fixed;
+}
+
+#christ {
+  border: 2px solid black;
+  width: 10%;
+  height: 90px;
+  margin-top: 29%;
+  margin-left: 35%;
+  position: fixed;
+}
+
+#italy {
+  border: 2px solid black;
+  width: 11%;
+  height: 75px;  
+  margin-top: 11%;
+  margin-left: 50%;
+  position: fixed;
+}
+
+#egypt {
+  border: 2px solid black;
+  width: 12%;
+  height: 75px;
+  margin-top: 18%;  
+  margin-left: 56%;
+  position: fixed;
+}
+  
+
+#china {
+  border: 2px solid black;
+  width: 10%;
+  height: 75px;
+  margin-top: 11%;
+  margin-left: 72%;
+  position: fixed;
+}
+
+#india {
+  border: 2px solid black;
+  width: 10%;
+  height: 75px;
+  margin-top: 19.5%;
+  margin-left: 70%;
+  position: fixed;
+}
