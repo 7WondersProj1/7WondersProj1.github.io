@@ -9,20 +9,6 @@ body {
     background-color: rgb(13, 119, 146);
 }
 
-
-.wind {
-    
-    margin-bottom: -150px;
-   opacity: 0.5;
-    position: relative;
-    animation: windy 30s infinite;
-    animation-delay: 2s;
-  }
-  @keyframes windy {
-    from {left: 0px;}
-    to {left: 1500px;}
-  }
-
 #bg {
     width: 950px;
     height: 750px;
