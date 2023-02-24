@@ -8,17 +8,46 @@ body {
     background-size: 97% 97%;
     background-color: rgb(13, 119, 146);
 }
+.element {
+  background-image: url("compass-png-clipart-best-29.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  background-position: center; 
+  background-attachment: fixed;
+  animation: rotate 2s infinite;
+ 
+  width: 200px;
+  height: 200px;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
 
+@keyframes rotate {
+  0% {
+    transform: rotate(-45deg)
+  }
+  100% {
+    transform: rotate(45deg)
+  }
+}
+#wrapper {
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
+}
 
 .wind {
-    text-align: center;
     margin-bottom: -150px;
    opacity: 0.5;
     position: relative;
     animation: windy 30s ;
     animation-delay: 2s;
-    animation: windy 30s ;
+    animation: windy 30s infinite;
     animation-fill-mode: forwards;
+    z-index: -1;
   }
 
  
@@ -26,11 +55,13 @@ body {
     text-align: center;
     margin-bottom: -150px;
     opacity: 0.5;
-    position: relative;
+    position:relative;
     animation: windy2 30s;
     animation-delay: 2s;
-    animation: windy2 30s ;
+    animation: windy2 30s infinite ;
     animation-fill-mode: forwards;
+    z-index: -1;
+   
   }
   @keyframes windy {
     from {left: 0px;}
@@ -46,18 +77,282 @@ body {
     }
   }
 
+  .scrolling { 
+    position: fixed;
+    top: 0;
+}
+ 
+  
+  #mexico { 
+  text-align: left;
+
+  margin-top: -160px;
+  margin-left: 50px; 
+
+  position: fixed;
+  display: block;
+
+  }
+  
+ 
+
+ #mexico:hover + #airplane{
+  width: fit-content;
+  margin-top: -30px;
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+  
+ 
+  position: fixed;
+  animation-name: itza;
+  transition-timing-function: ease-in-out;
+  animation-duration: 3s;  
+  animation-delay:inherit;
+  animation-fill-mode: both;
+ 
+  display:block;
+ 
+ 
+} 
+  @keyframes itza {
+    from {top: 0px; }
+  to {top: 320px; }
+  }
+  #airplane{
+    display:none;
+  
+    }
+  #peru {
+  text-align: left;
+  position: fixed;
+  margin-top: -80px;
+  margin-left: 107px;
+
+  display: block;
+  
+  }
+
+  #peru:hover + #airplane{
+    margin-top: -30px;
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+   
+    position: fixed;
+    animation-name: picchu;
+    transition-timing-function: ease-in-out;
+    animation-duration: 3s;  
+    animation-delay:inherit;
+    animation-fill-mode: both;
+    
+    display:block;
+    
+   
+  } 
+    @keyframes picchu {
+      from {top: 0px; }
+    to {top: 500px; }
+    }
+    #airplane{
+      display:none;
+      }
+  
+ 
+  
+  #christ {
+    text-align: left;
+    display: block;
+  margin-top: -60.5px;
+  margin-left: 270px;
+
+  position: fixed;
+  }
+  #christ:hover + #airplane{
+    margin-top: -30px;
+    width: 100px;
+    height: 100px;
+    margin-left: 250px;
+   
+    position: fixed;
+    animation-name: redeem;
+    transition-timing-function: ease-in-out;
+    animation-duration: 3s;  
+    animation-delay:inherit;
+    animation-fill-mode: both;
+    
+    display:block;
+    
+   
+  } 
+    @keyframes redeem {
+      from {top: 0px; }
+    to {top: 500px; }
+    }
+    #airplane{
+      display:none;
+      }
+ 
+  
+  #italy {
+    border: 2px black;
+    width: fit-content;
+    text-align: left;
+    display: block;
+    margin-top: -290.5px;
+    margin-left: 440px;
+  
+    position: fixed;
+  }
+  #italy:hover + #airplane {
+    margin-top: -30px;
+    width: 100px;
+    height: 100px;
+    margin-left: 450px;
+   
+    position: fixed;
+    animation-name: colo;
+    transition-timing-function: ease-in-out;
+    animation-duration: 3s;  
+    animation-delay:inherit;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    
+    display:block;
+    
+   
+  } 
+    @keyframes colo {
+      from {top: 0px; }
+    to {top: 350px; }
+    }
+    #airplane{
+      display:none;
+      }
+  
+  
+  
+  #egypt {
+ 
+    text-align: left;
+    display: block;
+    margin-top: -230.5px;
+    margin-left: 590px;
+  
+    position: fixed;
+    
+  }
+  #egypt:hover + #airplane {
+    margin-top: -30px;
+    width: 100px;
+    height: 100px;
+    margin-left: 550px;
+   
+    position: fixed;
+    animation-name: giza;
+    transition-timing-function: ease-in-out;
+    animation-duration: 3s;  
+    animation-delay:inherit;
+    animation-fill-mode: both;
+    
+    display:block;
+    
+   
+  } 
+    @keyframes giza {
+      from {top: 0px; }
+    to {top: 390px; }
+    }
+    #airplane{
+      display:none;
+      }
+ 
+  
+  #china {
+ 
+    text-align: left;
+    display: block;
+    margin-top: -345.5px;
+    margin-left: 890px;
+  
+    position: fixed;
+    
+  }
+  #china:hover + #airplane {
+    margin-top: -30px;
+    width: 100px;
+    height: 100px;
+    margin-left: 850px;
+   
+    position: fixed;
+    animation-name: wall;
+    transition-timing-function: ease-in-out;
+    animation-duration: 3s;  
+    animation-delay:inherit;
+    animation-fill-mode: both;
+    
+    display:block;
+    
+   
+  } 
+    @keyframes wall {
+      from {top: 0px; }
+    to {top: 300px; }
+    }
+    #airplane{
+      display:none;
+      }
+  
+  #india {
+    text-align: left;
+    display: block;
+    margin-top: -278px;
+    margin-left: 755px;
+  
+    position: fixed;
+  }
+  #india:hover + #airplane {
+    margin-top: -30px;
+    width: 100px;
+    height: 100px;
+    margin-left: 750px;
+   
+    position: fixed;
+    animation-name: taj;
+    transition-timing-function: ease-in-out;
+    animation-duration: 3s;  
+    animation-delay:inherit;
+    animation-fill-mode: both;
+    
+    display:block;
+    
+   
+  } 
+    @keyframes taj {
+      from {top: 0px; }
+    to {top: 390px; }
+    }
+    #airplane{
+      display:none;
+      }
 
 
 
 
 .button{
-  display:inline-block;
+ 
+  /* display:inline-block; */
   padding:5px;
   border:solid 2px #000;  
   border-radius:5px;
   margin-bottom:10px;
   background-color:#bbb;
   color:black;
+  display: none;
+  
+}
+.button:hover{
+  display: block;
 }
 
 
@@ -73,5 +368,25 @@ body {
   display: none;
  
 }
+
+.popup{
+  background:blue; 
+ text-align: justify;
+  color:#fff; 
+  border:solid 2px #000;
+  position: fixed;
+ 
+}
+.popup2{
+  background:blue; 
+  text-align: center;
+  color:#fff; 
+  border:solid 2px #000;
+  position:initial;
+ 
+  
+}
+
+
 
 
