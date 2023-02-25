@@ -404,4 +404,18 @@ p{
 
 
 
+/* #volcano {
+  top: 70%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  transition: transform .2s;
+  position: fixed;
+  margin:0 auto;
+  width:200px;
+  height:200px;
 
+  
+}
+#volcano:hover{
+  transform: scale(4.5);
+} */
