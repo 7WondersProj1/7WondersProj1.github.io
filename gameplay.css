@@ -121,8 +121,6 @@ body {
   width: fit-content;
   top: 0%;
   left: 18%;
-  
- 
   position: fixed;
   animation-name: itza;
   transition-timing-function: ease-in-out;
@@ -144,8 +142,7 @@ body {
     top: 70%;
     left: 23%;
     transform: translate(-50%, -50%);
-
-     position: fixed;
+    position: fixed;
 
   }
 
@@ -377,6 +374,7 @@ body {
 p{
   width: 300px;
   font-family: monospace; 
+  
 }
 
 
@@ -392,14 +390,10 @@ p{
 } */
 .popup2{
   background:rgb(96, 96, 134); 
- 
- 
   color:#fff; 
   border:solid 2px #000;
   position:initial;
-  
-
-  
+ 
 }
 
 
