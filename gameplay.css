@@ -19,7 +19,7 @@ body {
  
   width: 200px;
   height: 200px;
-  z-index: -2;
+  z-index: -2; /* z-index makes sure the clouds can stack over one another and to not block anything */
   top: 0;
   left: 0;
   position: absolute;
@@ -77,6 +77,58 @@ body {
     }
   }
 
+  #hurricane1 {
+    margin-top: 8%;
+    margin-left: -16%;
+    opacity: 0.8;
+    z-index: -2;
+    animation: rotate 3s infinite;
+    animation-delay: 2s;
+    animation-direction:alternate-reverse;
+    position: fixed;
+  }
+
+  #hurricane2 { /* will move around screen; use keyframes */ 
+    margin-top: -30%;
+    margin-left: 1%;
+    opacity: 0.8;
+    z-index: -2; 
+    animation: hur1move 5s linear infinite;
+    animation-delay: 2s;
+    animation-direction:normal;
+  }
+
+  @keyframes hur1move { /* think about doing a transition while rotating AND moving around the screen */
+    from{ transform: rotate(0deg) translateX(110px) rotate(0deg); }
+    to{ transform: rotate(360deg) translateX(110px) rotate(-360deg);}
+  }
+
+  #hurricane3 { /* will move around screen; use keyframes */
+    margin-top: 14%;
+    margin-left: 70%;
+    opacity: 0.8;
+    z-index: -2;
+    animation: hur2move 5s linear infinite;
+    animation-delay: 2s;
+    animation-direction:reverse;
+  }
+
+  @keyframes hur2move {
+    from{ transform: rotate(0deg) translateX(110px) rotate(0deg); }
+    to{ transform: rotate(360deg) translateX(110px) rotate(-360deg);}
+  }
+
+  #hurricane4 {
+    margin-top: -33%;
+    margin-left: 68%;
+    opacity: 0.8;
+    z-index: -2;
+    animation: rotate 3s infinite;
+    animation-delay: 2s;
+    animation-direction:reverse;
+    position: fixed;
+  }
+
   .scrolling { 
     position: fixed;
     top: 0;
@@ -95,7 +147,6 @@ body {
   }
   
  
-
  #mexico:hover + #airplane{
   width: fit-content;
   margin-top: -30px;
