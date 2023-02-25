@@ -103,10 +103,13 @@ body {
   }
 
   #hurricane1 {
-    margin-top: 8%;
+    margin-top: 42.5%;
     margin-left: -16%;
     opacity: 0.8;
     z-index: -2;
+    transform: translate(-50%, -50%);
+    top: -5%;
+    left: 18%;
     animation: rotate 3s infinite;
     animation-delay: 2s;
     animation-direction:alternate-reverse;
@@ -114,13 +117,17 @@ body {
   }
 
   #hurricane2 { /* will move around screen; use keyframes */ 
-    margin-top: -30%;
+    margin-top: 24%;
     margin-left: 1%;
     opacity: 0.8;
     z-index: -2; 
+    transform: translate(-50%, -50%);
+    top: -13%;
+    left: 16%;
     animation: hur1move 5s linear infinite;
     animation-delay: 2s;
     animation-direction:normal;
+    position: fixed;
   }
 
   @keyframes hur1move { /* think about doing a transition while rotating AND moving around the screen */
@@ -133,9 +140,13 @@ body {
     margin-left: 70%;
     opacity: 0.8;
     z-index: -2;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: -1%;
     animation: hur2move 5s linear infinite;
     animation-delay: 2s;
     animation-direction:reverse;
+    position: fixed;
   }
 
   @keyframes hur2move {
@@ -148,6 +159,9 @@ body {
     margin-left: 68%;
     opacity: 0.8;
     z-index: -2;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    left: 19%;
     animation: rotate 3s infinite;
     animation-delay: 2s;
     animation-direction:reverse;
