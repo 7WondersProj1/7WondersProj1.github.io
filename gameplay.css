@@ -378,16 +378,7 @@ p{
 }
 
 
-/* .popup{
-  background:blue; 
- text-align: center;
- padding:50px;
-  color:#fff; 
-  border:solid 2px #000;
-  border-width: 100px;
-  position: relative;
- 
-} */
+
 .popup2{
   background:rgb(96, 96, 134); 
   color:#fff; 
@@ -398,18 +389,3 @@ p{
 
 
 
-/* #volcano {
-  top: 70%;
-  right: 40%;
-  transform: translate(-50%, -50%);
-  transition: transform .2s;
-  position: fixed;
-  margin:0 auto;
-  width:200px;
-  height:200px;
-
-  
-}
-#volcano:hover{
-  transform: scale(4.5);
-} */
