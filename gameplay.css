@@ -1,13 +1,22 @@
+/* @media screen and (max-width: 320px) { @viewport { width: 320px; } } */
+@media screen and (max-width:320px){
+  
+  
+}
 body {
     background-image: URL("MIN-GK2-KNA_A_FBL.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
     margin: 0;
     background-size: 97% 97%;
     background-color: rgb(13, 119, 146);
+    margin: 0; 
+    /* height: 100%; */
+    overflow: hidden
 }
+
 .element {
   background-image: url("compass-png-clipart-best-29.png");
   background-size: cover;
@@ -36,43 +45,59 @@ body {
 #wrapper {
   margin-left:auto;
   margin-right:auto;
-  width:960px;
-}
+  margin-right: auto; 
+  margin-left:  auto;
 
+  max-width: 960px; 
+
+  padding-right: 10px; 
+  padding-left:  10px; 
+}
+.cloudy{
+  position: sticky;
+ 
+}
+.mex{
+  position: sticky;
+ 
+}
 .wind {
-    margin-bottom: -150px;
+    margin-top: 0%;
+    margin-bottom: 0%;
    opacity: 0.5;
-    position: relative;
+  
+    position: fixed;
     animation: windy 30s ;
     animation-delay: 2s;
-    animation: windy 30s infinite;
+    animation: windy 30s;
     animation-fill-mode: forwards;
     z-index: -1;
   }
 
  
   .wind2 {
-    text-align: center;
-    margin-bottom: -150px;
+   margin-top: 0%;
+   margin-bottom: 0%;
+   text-align: center; 
     opacity: 0.5;
-    position:relative;
+    position: fixed;
     animation: windy2 30s;
     animation-delay: 2s;
-    animation: windy2 30s infinite ;
+    animation: windy2 30s ;
     animation-fill-mode: forwards;
     z-index: -1;
    
   }
   @keyframes windy {
-    from {left: 0px;}
-    to {left: 1500px;
+    from {left: 0%;}
+    to {left: 100%;
         visibility: hidden;
     }
    
-  }
+  } 
   @keyframes windy2 {
-    from {right: 0px;}
-    to {right: 1500px;
+    from {right: 0%;}
+    to {right: 100%;
         visibility: hidden;
     }
   }
@@ -83,25 +108,19 @@ body {
 }
  
   
-  #mexico { 
-  text-align: left;
-
-  margin-top: -160px;
-  margin-left: 50px; 
-
+#mexico { 
+  top: 54%;
+  left: 25%;
+  transform: translate(-50%, -50%);
   position: fixed;
-  display: block;
-
-  }
-  
  
+}
 
  #mexico:hover + #airplane{
+  transform: translate(-50%, -50%);
   width: fit-content;
-  margin-top: -30px;
-  width: 100px;
-  height: 100px;
-  margin-left: 100px;
+  top: 0%;
+  left: 18%;
   
  
   position: fixed;
@@ -112,32 +131,29 @@ body {
   animation-fill-mode: both;
  
   display:block;
- 
- 
 } 
   @keyframes itza {
-    from {top: 0px; }
-  to {top: 320px; }
+    from {top: 0%; }
+  to {top: 50%; }
   }
   #airplane{
     display:none;
   
     }
   #peru {
-  text-align: left;
-  position: fixed;
-  margin-top: -80px;
-  margin-left: 107px;
+    top: 70%;
+    left: 23%;
+    transform: translate(-50%, -50%);
 
-  display: block;
-  
+     position: fixed;
+
   }
 
   #peru:hover + #airplane{
-    margin-top: -30px;
-    width: 100px;
-    height: 100px;
-    margin-left: 150px;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    top: 0%;
+    left: 22%;
    
     position: fixed;
     animation-name: picchu;
@@ -151,8 +167,8 @@ body {
    
   } 
     @keyframes picchu {
-      from {top: 0px; }
-    to {top: 500px; }
+      from {top: 0%; }
+    to {top: 72%; }
     }
     #airplane{
       display:none;
@@ -161,18 +177,17 @@ body {
  
   
   #christ {
-    text-align: left;
-    display: block;
-  margin-top: -60.5px;
-  margin-left: 270px;
+    top: 75%;
+    left: 40%;
+    transform: translate(-50%, -50%);
 
-  position: fixed;
+     position: fixed;
   }
   #christ:hover + #airplane{
-    margin-top: -30px;
-    width: 100px;
-    height: 100px;
-    margin-left: 250px;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    top: 0%;
+    left: 37%;
    
     position: fixed;
     animation-name: redeem;
@@ -186,8 +201,8 @@ body {
    
   } 
     @keyframes redeem {
-      from {top: 0px; }
-    to {top: 500px; }
+      from {top: 0%; }
+    to {top: 82%; }
     }
     #airplane{
       display:none;
@@ -195,20 +210,17 @@ body {
  
   
   #italy {
-    border: 2px black;
-    width: fit-content;
-    text-align: left;
-    display: block;
-    margin-top: -290.5px;
-    margin-left: 440px;
-  
-    position: fixed;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+
+     position: fixed;
   }
   #italy:hover + #airplane {
-    margin-top: -30px;
-    width: 100px;
-    height: 100px;
-    margin-left: 450px;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    top: 0%;
+    left: 48%;
    
     position: fixed;
     animation-name: colo;
@@ -223,8 +235,8 @@ body {
    
   } 
     @keyframes colo {
-      from {top: 0px; }
-    to {top: 350px; }
+      from {top: 0%; }
+    to {top: 57%; }
     }
     #airplane{
       display:none;
@@ -233,20 +245,17 @@ body {
   
   
   #egypt {
- 
-    text-align: left;
-    display: block;
-    margin-top: -230.5px;
-    margin-left: 590px;
-  
-    position: fixed;
+    top: 52%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+     position: fixed;
     
   }
   #egypt:hover + #airplane {
-    margin-top: -30px;
-    width: 100px;
-    height: 100px;
-    margin-left: 550px;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    top: 0%;
+    right: 28%;
    
     position: fixed;
     animation-name: giza;
@@ -260,8 +269,8 @@ body {
    
   } 
     @keyframes giza {
-      from {top: 0px; }
-    to {top: 390px; }
+      from {top: 0%; }
+    to {top: 59%; }
     }
     #airplane{
       display:none;
@@ -269,20 +278,17 @@ body {
  
   
   #china {
- 
-    text-align: left;
-    display: block;
-    margin-top: -345.5px;
-    margin-left: 890px;
-  
+    top: 40%;
+    left: 81%;
+    transform: translate(-50%, -50%);
     position: fixed;
     
   }
   #china:hover + #airplane {
-    margin-top: -30px;
-    width: 100px;
-    height: 100px;
-    margin-left: 850px;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    top: 0%;
+    right: 18%;
    
     position: fixed;
     animation-name: wall;
@@ -296,53 +302,50 @@ body {
    
   } 
     @keyframes wall {
-      from {top: 0px; }
-    to {top: 300px; }
+      from {top: 0%; }
+    to {top: 35%; }
     }
     #airplane{
       display:none;
       }
   
   #india {
-    text-align: left;
-    display: block;
-    margin-top: -278px;
-    margin-left: 755px;
-  
-    position: fixed;
+    top: 60%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+     position: fixed;
   }
   #india:hover + #airplane {
-    margin-top: -30px;
-    width: 100px;
-    height: 100px;
-    margin-left: 750px;
-   
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    top: 0%;
+    right: 18%;
     position: fixed;
     animation-name: taj;
     transition-timing-function: ease-in-out;
     animation-duration: 3s;  
     animation-delay:inherit;
     animation-fill-mode: both;
-    
+    transform: rotateY(180deg);
     display:block;
     
    
   } 
     @keyframes taj {
-      from {top: 0px; }
-    to {top: 390px; }
+      from {top: 0%; }
+    to {top: 60%; }
     }
     #airplane{
       display:none;
       }
 
-
+    
 
 
 .button{
  
-  /* display:inline-block; */
-  padding:5px;
+  display:inline-block; 
+  padding: 10px;
   border:solid 2px #000;  
   border-radius:5px;
   margin-bottom:10px;
@@ -352,7 +355,9 @@ body {
   
 }
 .button:hover{
+
   display: block;
+ 
 }
 
 
@@ -366,24 +371,34 @@ body {
 
 .game-frame{
   display: none;
+
  
+}
+p{
+  width: 300px;
+  font-family: monospace; 
 }
 
-.popup{
+
+/* .popup{
   background:blue; 
- text-align: justify;
+ text-align: center;
+ padding:50px;
   color:#fff; 
   border:solid 2px #000;
-  position: fixed;
+  border-width: 100px;
+  position: relative;
  
-}
+} */
 .popup2{
-  background:blue; 
-  text-align: center;
+  background:rgb(96, 96, 134); 
+ 
+ 
   color:#fff; 
   border:solid 2px #000;
   position:initial;
- 
+  
+
   
 }
 
