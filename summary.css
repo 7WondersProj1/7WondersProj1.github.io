@@ -1,0 +1,29 @@
+body{
+    background-image: URL("ocean.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    background-size: 100% 100%;
+    background-color: rgb(13, 119, 146);
+    margin: 0; 
+    /* height: 100%; */
+    overflow: hidden
+}
+#summary{
+    background-color: rgb(13, 119, 146);
+    color: beige;
+    text-align: left;
+    font-family: monospace;
+    font-size: 15pt;
+    border: 5px;
+    border-radius: 10px;
+    margin: 8px;
+    width: fit-content;
+    padding-right: 7%;
+    margin-top: 20%;
+    margin-left: 20%;
+    padding-top: 7px;
+
+}
